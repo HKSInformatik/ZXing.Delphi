@@ -114,8 +114,8 @@ end;
 class function TFormatInformation.doDecodeFormatInformation
   (const maskedFormatInfo1, maskedFormatInfo2: Integer): TFormatInformation;
 var
+  i: Integer;
   bestDifference, bestFormatInfo, bitsDifference, targetInfo: Integer;
-  decodeInfo: TArray<Integer>;
 begin
   Result := nil;
 
